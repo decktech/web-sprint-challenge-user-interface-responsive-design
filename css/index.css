@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -307,7 +307,12 @@ footer button {
 @media (max-width: 428px) {
     /* header section */
     h1 {
-        font-size: 3.75rem;
+        font-size: 3.5rem;
+        text-align: center;
+        /* margin: 0%; */
+        width: 60%;
+        display: flex;
+        line-height: 5vh;
         /* font-size: 100%; */
     }
     
@@ -328,6 +333,8 @@ footer button {
 
     header section {
         height: auto;
+        justify-content: center;
+        flex-flow: column;
     }
     /* h1 {
         font-size: 100%;
@@ -337,14 +344,26 @@ footer button {
     }
     .title a {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
     nav {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: nowrap column;
     }
     .links {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-top: 8vh;
+        padding-bottom: 6vh;
     }
-    
+    .social-buttons a {
+        height: 70%;
+        width: 4.2%;
+    }
     /* gallery section */
   
     .gallery {
@@ -365,16 +384,17 @@ footer button {
     /* about us section */
 
     .about {
-        height: 210vh;
+        height: auto;
+        background-size: 310%;
     }
     
     .about h2 {
-        width: 100%;
-        padding-top: 5vh;
+        padding-top: 10vh;
     }
     
     .about-container .text {
-        width: 85%;
+        padding-top: 15vh;
+        width: 65%;
     }
     
     /* contact us section */
